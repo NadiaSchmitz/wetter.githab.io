@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="./styles/reset.css" type="text/css" />
   <link rel="stylesheet" href="./styles/style.css" type="text/css" />
   <link rel="stylesheet" href="./styles/icons.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/textur.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/background1.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/background2.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/background3.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +23,85 @@
 <body>
   <section class="wrapper">
     <section class="inner_wrapper">
-      <div class="weather">
-        <div class="layout"></div>
+      <div id="weather" class="main_layout_my_weather">
+        <div id="layout_1" class="layout1_my_weather"></div>
         <div class="status_wrapper">
           <div class="status status_temperature">
-            <div class="status_value status_temperature_value">25<span class="celsius">&#8451;</span></div>
+            <div class="status_value status_temperature_value">
+              <span>26</span>
+              <span class="celsius">&#8451;</span>
+            </div>
           </div>
-          <div class="status status_sun"></div>
-          <div class="status status_clouds"></div>
-          <div class="status status_rain"></div>
-          <div class="status status_snow"></div>
-          <div class="status status_wind"></div>
+          <div class="status status_clouds">
+            <div class="status_value status_clouds_value">
+              <span>0</span>
+              <span>/8</span>
+            </div>
+          </div>
+          <div class="status status_rain">
+            <div class="status_value status_rain_value">
+              <span>0</span>
+              <span>%</span>
+            </div>
+          </div>
+          <div class="status status_snow">
+            <div class="status_value status_snow_value">
+              <span>0</span>
+              <span>%</span>
+            </div>
+          </div>
+          <div class="status status_wind">
+            <div class="status_value status_wind_value">
+              <span>3</span>
+              <span>m/s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <div class="control_keyboard">
+          <div class="control_keyboard_section">
+            <div class="weather_button_wrapper">
+              <span id="myWeather" class="weather_button">Mein Wetter</span>
+            </div>
+            <div class="control_keyboard_content">
+              <div class="control_keyboard_content_item">
+                <span class="control_button temperatur_minus">-</span>
+                <span class="control_weather temperatur_value"></span>
+                <span class="control_button temperatur_plus">+</span>
+              </div>
+              <div class="control_keyboard_content_item">
+                <span class="control_button clouds_minus">-</span>
+                <span class="control_weather clouds_value"></span>
+                <span class="control_button clouds_plus">+</span>
+              </div>
+              <div class="control_keyboard_content_item">
+                <span class="control_button clouds_minus">-</span>
+                <span class="control_weather clouds_value"></span>
+                <span class="control_button clouds_plus">+</span>
+              </div>
+              <div class="control_keyboard_content_item">
+                <span class="control_button clouds_minus">-</span>
+                <span class="control_weather clouds_value"></span>
+                <span class="control_button clouds_plus">+</span>
+              </div>
+              <div class="control_keyboard_content_item">
+                <span class="control_button clouds_minus">-</span>
+                <span class="control_weather clouds_value"></span>
+                <span class="control_button clouds_plus">+</span>
+              </div>
+            </div>
+          </div>
+          <div class="control_keyboard_section">
+            <div class="weather_button_wrapper">
+              <span id="nachbarnWeather" class="weather_button">Nachbarn</span>
+            </div>
+          </div>
+          <div class="control_keyboard_section">
+            <div class="weather_button_wrapper">
+              <span id="arbeitWeather" class="weather_button">Arbeit</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

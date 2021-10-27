@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    var widthScreen = $(window).width() - 700;
+/*$(document).ready(function() {
+    var widthScreen = $(window).width() - 900;
     var heightScreen = widthScreen / 1.5;
     
     var screenRatio = widthScreen / heightScreen;
@@ -10,4 +10,4 @@ $(document).ready(function() {
     
     $(".weather").css("width", widthScreen);
     $(".weather").css("height", heightScreen);
-})
+})*/
