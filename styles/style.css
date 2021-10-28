@@ -1,15 +1,31 @@
+.wrapper {
+  min-height: calc(100vh);
+  background-position: 50% -200px;
+  background-size: cover;
+}
+
 .inner_wrapper {
   font-family: 'Roboto', sans-serif;
+  padding: 50px  0 0 0;
+}
+
+.weather_wrapper {
+  width: 800px;
+  height: 540px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+  padding: 50px;
 }
 
 #weather {
   position: relative;
-  width: 800px;
-  height: 533px;
+  width: 700px;
+  height: 440px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  margin: 50px auto 20px;
+  margin: 0 auto;
 }
 
 #layout_1 {
@@ -35,6 +51,7 @@
   background-size: 25px;
   background-position: 5px 5px;
   background-repeat: no-repeat;
+  background-color: rgb(36 36 36 / 66%);
   margin: 0 0 3px 0;
 }
 
@@ -61,6 +78,7 @@
   background-size: cover;
   border-radius: 20px;
   text-align: center;
+  box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px, inset rgb(179 178 178 / 90%) 3px 3px 8px, rgba(0,0,0,.8) 3px 3px 8px -3px;
   margin: 0 auto;
   padding: 20px;
 }
