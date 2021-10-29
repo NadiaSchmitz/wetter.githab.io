@@ -1,7 +1,7 @@
 .wrapper {
   min-height: calc(100vh);
-  background-position: 50% -200px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .inner_wrapper {
@@ -38,6 +38,12 @@
   background-position: 40% 0;
 }
 
+.layout1_my_weather,
+.layout1_nachbarn_weather,
+.layout1_arbeit_weather {
+  opacity: 0.5;
+}
+
 .status_wrapper {
   padding: 10px 0 0 10px;
 }
@@ -60,7 +66,7 @@
 }
 
 .status_value {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   text-align: center;
   color: #cddc39;
@@ -129,12 +135,9 @@
   box-shadow: rgba(0,0,0,.4) 0 3px 8px;
 }
 
-.weather_button:active {
-  color: #777;
-  border-bottom: 1px solid #fff;
-  -webkit-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
-  -moz-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
-  box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
+.active_button {
+  color: #cddc39;
+  text-shadow: 1px 1px 2px rgb(94 92 92);
 }
 
 .control_keyboard_content_item {
@@ -163,6 +166,7 @@
   -ms-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
+  cursor: no-drop;
 }
 
 .control_weather {
@@ -173,4 +177,10 @@
   background-position: 50%;
   background-size: cover;
   margin: -5px 10px 0 10px;
+}
+
+.active_control_button {
+  color: #cddc39;
+  text-shadow: 1px 1px 2px rgb(94 92 92);
+  cursor: pointer;
 }
