@@ -28,7 +28,9 @@
   margin: 0 auto;
 }
 
-#layout_1 {
+#layout_1,
+#layout_2,
+#layout_3 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -36,6 +38,27 @@
   right: 0;
   background-size: cover;
   background-position: 40% 0;
+  overflow: hidden;
+}
+
+#layout_2 {
+  display: none;
+  transform: rotate(180deg);
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+#layout_3 {
+  display: none;
+  left: 50px;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 .layout1_my_weather,

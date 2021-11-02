@@ -13,13 +13,14 @@
   <link rel="stylesheet" href="./styles/background1.css" type="text/css" />
   <link rel="stylesheet" href="./styles/background2.css" type="text/css" />
   <link rel="stylesheet" href="./styles/background3.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/popup.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  
+
 </head>
 
 <body>
@@ -28,72 +29,74 @@
     <section class="inner_wrapper">
       <div class="weather_wrapper">
         <div id="weather" class="main_layout_my_weather">
-        <div id="layout_1" class="layout1_my_weather"></div>
-        <div class="status_wrapper">
-          <div class="status status_temperature">
-            <div class="status_value status_temperature_value">
-              <span class="temperature_value">26</span>
-              <span>&#8451;</span>
+          <div id="layout_1" class="layout1_my_weather"></div>
+          <div id="layout_2" class="layout2_arbeit_weather"></div>
+          <div id="layout_3" class="layout3_arbeit_weather"></div>
+          <div class="status_wrapper">
+            <div class="status status_temperature">
+              <div class="status_value status_temperature_value">
+                <span class="temperature_value">26</span>
+                <span>&#8451;</span>
+              </div>
             </div>
-          </div>
-          <div class="status status_clouds">
-            <div class="status_value status_clouds_value">
-              <span class="clouds_value">0</span>
-              <span>/8</span>
+            <div class="status status_clouds">
+              <div class="status_value status_clouds_value">
+                <span class="clouds_value">0</span>
+                <span>/8</span>
+              </div>
             </div>
-          </div>
-          <div class="status status_rain">
-            <div class="status_value status_rain_value">
-              <span class="rain_value">0</span>
-              <span>%</span>
+            <div class="status status_rain">
+              <div class="status_value status_rain_value">
+                <span class="rain_value">0</span>
+                <span>%</span>
+              </div>
             </div>
-          </div>
-          <div class="status status_snow">
-            <div class="status_value status_snow_value">
-              <span class="snow_value">0</span>
-              <span>%</span>
+            <div class="status status_snow">
+              <div class="status_value status_snow_value">
+                <span class="snow_value">0</span>
+                <span>%</span>
+              </div>
             </div>
-          </div>
-          <div class="status status_wind">
-            <div class="status_value status_wind_value">
-              <span class="wind_value">3</span>
-              <span>m/s</span>
+            <div class="status status_wind">
+              <div class="status_value status_wind_value">
+                <span class="wind_value">3</span>
+                <span>m/s</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div class="control">
         <div class="control_keyboard">
           <div class="control_keyboard_section">
             <div class="weather_button_wrapper">
-              <span id="myWeather" class="weather_button active_button myWeather" data-info="my">Mein Wetter</span>
+              <span id="myWeather" class="weather_button myWeather active_button" data-info="my">Mein Wetter</span>
             </div>
             <div class="control_keyboard_content">
               <div class="control_keyboard_content_item">
-                <span class="control_button minus temperature_minus active_control_button my">-</span>
+                <span class="control_button temperature_minus active_control_button my ">-</span>
                 <span class="control_weather temperatur_value_control"></span>
-                <span class="control_button plus temperature_plus active_control_button my">+</span>
-              </div>
-              <div class="control_keyboard_content_item">
-                <span class="control_button minus clouds_minus active_control_button my">-</span>
-                <span class="control_weather clouds_value_control"></span>
-                <span class="control_button plus clouds_plus active_control_button my">+</span>
+                <span class="control_button temperature_plus active_control_button my">+</span>
               </div>
               <div class="control_keyboard_content_item">
                 <span class="control_button clouds_minus active_control_button my">-</span>
-                <span class="control_weather rain_value_control"></span>
+                <span class="control_weather clouds_value_control"></span>
                 <span class="control_button clouds_plus active_control_button my">+</span>
+              </div>
+              <div class="control_keyboard_content_item">
+                <span class="control_button rain_minus active_control_button my">-</span>
+                <span class="control_weather rain_value_control"></span>
+                <span class="control_button rain_plus active_control_button my">+</span>
               </div>
               <div class="control_keyboard_content_item ">
-                <span class="control_button clouds_minus active_control_button my">-</span>
+                <span class="control_button snow_minus active_control_button my">-</span>
                 <span class="control_weather snow_value_control"></span>
-                <span class="control_button clouds_plus active_control_button my">+</span>
+                <span class="control_button snow_plus active_control_button my">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus active_control_button my">-</span>
+                <span class="control_button wind_minus active_control_button my">-</span>
                 <span class="control_weather wind_value_control"></span>
-                <span class="control_button clouds_plus active_control_button my">+</span>
+                <span class="control_button wind_plus active_control_button my">+</span>
               </div>
             </div>
           </div>
@@ -103,61 +106,61 @@
             </div>
             <div class="control_keyboard_content">
               <div class="control_keyboard_content_item">
-                <span class="control_button minus temperature_minus nachbarn">-</span>
+                <span class="control_button temperature_minus nachbarn">-</span>
                 <span class="control_weather temperatur_value_control"></span>
-                <span class="control_button plus temperature_plus nachbarn">+</span>
+                <span class="control_button temperature_plus nachbarn">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button minus clouds_minus nachbarn">-</span>
+                <span class="control_button clouds_minus nachbarn">-</span>
                 <span class="control_weather clouds_value_control"></span>
-                <span class="control_button plus clouds_plus nachbarn">+</span>
+                <span class="control_button clouds_plus nachbarn">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus nachbarn">-</span>
+                <span class="control_button rain_minus nachbarn">-</span>
                 <span class="control_weather rain_value_control"></span>
-                <span class="control_button clouds_plus nachbarn">+</span>
+                <span class="control_button rain_plus nachbarn">+</span>
               </div>
-              <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus nachbarn">-</span>
+              <div class="control_keyboard_content_item ">
+                <span class="control_button snow_minus nachbarn">-</span>
                 <span class="control_weather snow_value_control"></span>
-                <span class="control_button clouds_plus nachbarn">+</span>
+                <span class="control_button snow_plus nachbarn">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus nachbarn">-</span>
+                <span class="control_button wind_minus nachbarn">-</span>
                 <span class="control_weather wind_value_control"></span>
-                <span class="control_button clouds_plus nachbarn">+</span>
+                <span class="control_button wind_plus nachbarn">+</span>
               </div>
             </div>
           </div>
           <div class="control_keyboard_section">
             <div class="weather_button_wrapper">
-              <span id="arbeitWeather" class="weather_button" data-info="arbeit">Arbeit</span>
+              <span id="arbeitWeather" class="weather_button arbeitWeather" data-info="arbeit">Arbeit</span>
             </div>
             <div class="control_keyboard_content">
               <div class="control_keyboard_content_item">
-                <span class="control_button minus temperature_minus arbeit">-</span>
+                <span class="control_button temperature_minus arbeit">-</span>
                 <span class="control_weather temperatur_value_control"></span>
-                <span class="control_button plus temperature_plus arbeit">+</span>
+                <span class="control_button temperature_plus arbeit">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button minus clouds_minus arbeit">-</span>
+                <span class="control_button clouds_minus arbeit">-</span>
                 <span class="control_weather clouds_value_control"></span>
-                <span class="control_button plus clouds_plus arbeit">+</span>
+                <span class="control_button clouds_plus arbeit">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus arbeit">-</span>
+                <span class="control_button rain_minus arbeit">-</span>
                 <span class="control_weather rain_value_control"></span>
-                <span class="control_button clouds_plus arbeit">+</span>
+                <span class="control_button rain_plus arbeit">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus arbeit">-</span>
+                <span class="control_button snow_minus arbeit">-</span>
                 <span class="control_weather snow_value_control"></span>
-                <span class="control_button clouds_plus arbeit">+</span>
+                <span class="control_button snow_plus arbeit">+</span>
               </div>
               <div class="control_keyboard_content_item">
-                <span class="control_button clouds_minus arbeit">-</span>
+                <span class="control_button wind_minus arbeit">-</span>
                 <span class="control_weather wind_value_control"></span>
-                <span class="control_button clouds_plus arbeit">+</span>
+                <span class="control_button wind_plus arbeit">+</span>
               </div>
             </div>
           </div>
@@ -165,8 +168,15 @@
       </div>
     </section>
   </section>
+  <div class="popup">
+    <div class="popup_content">
+      <span class="popup_close" onClick="PopUpHide()"></span>
+      <div class="popup_text"></div>
+    </div>
+  </div>
   <script type="text/javascript" src="./js/weather.js"></script>
   <script type="text/javascript" src="./js/general.js"></script>
+  <script type="text/javascript" src="./js/popup.js"></script>
 </body>
 
 </html>
